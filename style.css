@@ -12,6 +12,7 @@ html {
 
 header {
     background-color: black;
+    height: 69px;
     width: 100%;
     color: white;
     display: flex;
@@ -20,6 +21,8 @@ header {
     font-weight: bold;
     font-family: "Maven Pro", sans-serif;
     text-align: right;
+    position:fixed;
+    z-index: 1;
 }
 header ul {
     list-style:none;
@@ -49,6 +52,7 @@ header a:hover {
     display: flex;
     flex-direction: column;
     font-family: "Maven Pro", sans-serif;
+    padding-top: 69px;
 }
 .banner-copy {
     padding: 10px 20px;
