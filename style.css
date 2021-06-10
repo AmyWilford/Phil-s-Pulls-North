@@ -12,31 +12,49 @@ html {
 
 header {
     background-color: black;
-    height: 69px;
+    height: 100px;
     width: 100%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: bold;
     font-family: "Maven Pro", sans-serif;
     text-align: right;
     position:fixed;
     z-index: 1;
 }
+.icon {
+    width:30px;
+    height: auto;
+    margin: 0px 5px;
+}
+.head-nav {
+    display: flex;
+}
+.icon:hover {
+    width: 33px;
+    height: auto;
+    margin: 0px 7px;
+}
+
 header ul {
     list-style:none;
     display: flex;
     width: 100%;
+    margin-right: 30px;
+    align-items: center;
 }
-header a {
-    margin: 20px;
+
+.menu {
+    padding: 0px 10px;
     text-decoration:none;
     color: white;
     font-size: 20px;
 }
 header a:hover {
     color: #fe0000;
+    margin-right:3px;
+    margin-top: 1px;
 }
 
 .logo {
@@ -46,13 +64,13 @@ header a:hover {
 /*main section*/
 .banner {
     background-image: url("resources/phils-pulls-background.png");
-    background-position: center;
+    background-position: bottom;
     height: 500px;
     width: 100%;
     display: flex;
     flex-direction: column;
     font-family: "Maven Pro", sans-serif;
-    padding-top: 69px;
+    padding-top: 100px;
 }
 .banner-copy {
     padding: 10px 20px;
@@ -153,8 +171,10 @@ h1 {
 footer {
     background-color: black;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 1em;
 }
 footer a {
     color: #edecf5;
@@ -164,7 +184,9 @@ footer a {
 footer a:hover {
     color: #fe0000;
 }
-
+.foot-nav {
+    display: flex;
+}
 /*media queery*/
 @media only screen and (min-width: 800px) {
     .bio {
@@ -191,9 +213,18 @@ footer a:hover {
 }
 @media only screen and (max-width: 500px) {
     h1 {
-        font-size: 4.5em;
+        font-size: 5em;
+    }
+    header {
+        height:120px;
     }
     .banner {
     justify-content: center;
+    padding-top: 120px;
+    }
+    .head-nav {
+        display:flex;
+        flex-direction: column;
+
     }
 }
