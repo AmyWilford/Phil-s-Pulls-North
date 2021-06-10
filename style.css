@@ -1,0 +1,195 @@
+/* universal styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: "Lato", Sans-Serif;
+    font-size: 18px;
+    background-color: #edecf5;
+}
+/*header section*/
+
+header {
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-family: "Maven Pro", sans-serif;
+    text-align: right;
+}
+header ul {
+    list-style:none;
+    display: flex;
+    width: 100%;
+}
+header a {
+    margin: 20px;
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+}
+header a:hover {
+    color: #fe0000;
+}
+
+.logo {
+    height: 120px;
+    padding: 0px 10px;
+}
+/*main section*/
+.banner {
+    background-image: url("resources/phils-pulls-background.png");
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Maven Pro", sans-serif;
+}
+.banner-copy {
+    padding: 10px 20px;
+    text-align: center;
+    width: 45%;
+}
+h1 {
+    font-size: 6em;
+    line-height: 1em;
+    margin-bottom: .25em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-shadow: 4px 4px 4px #edecf5;
+}
+.tag {
+    background-color: white;
+    opacity: .4;
+    min-width: 250px;
+}
+.banner-copy span {
+    font-size: 18px;
+    letter-spacing: .1em;
+    line-height: 1.5em;
+
+}
+.banner-sub {
+    text-align: center;
+    line-height: 2em;
+    padding: 10px;
+}
+.banner-sub span{
+    text-transform: uppercase;
+}
+
+/*product section*/
+.products {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 70px 0px;
+    background-color: black;
+}
+.card {
+    width: 240px;
+    height: 240px;
+    margin: 0px 3%;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 240px;
+}
+
+.card a {
+    color: black;
+    text-shadow: 4px 4px 4px #edecf5;
+    padding: 10px;
+    font-family: "Maven Pro", sans-serif;
+    text-decoration: none;
+}
+.card a:hover {
+    font-size: 1.25em;
+
+}
+.a {
+    background-image: url("resources/card1.png");
+}
+.b {
+    background-image: url("resources/card2.png");
+}
+.c {
+    background-image: url("resources/card3.png");
+}
+/*team section*/
+.team {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+
+}
+.team img {
+    width: 175px;
+    height: auto;
+    margin-right: 10%;
+    padding-left: 10%;
+}
+
+.bio h4 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.bio span {
+    font-style: italic;
+}
+/*footer section*/
+footer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a {
+    color: #edecf5;
+    text-decoration: none;
+
+}
+footer a:hover {
+    color: #fe0000;
+}
+
+/*media queery*/
+@media only screen and (min-width: 800px) {
+    .bio {
+        display: flex;
+        width: 70%;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        margin:40px 0px;
+    }
+    .bio {
+        flex: none;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 4.5em;
+    }
+    .banner {
+    justify-content: center;
+    }
+}
